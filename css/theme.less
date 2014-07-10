@@ -419,8 +419,12 @@ blockquote {
 }
 
 .navbar-brand {
+  padding: 0px;
   img {
-    max-width: 160px;
+    max-width: 240px;
+    &.inverse {
+      display: none;
+    }
   }
 }
 
@@ -588,6 +592,19 @@ blockquote {
     &:before {
       top: 34%;
       height: 20px;
+    }
+  }
+}
+
+
+.cbp-af-header.cbp-af-header-shrink .navbar-brand {
+  img{
+    max-width: 160px;
+    &.white {
+      display: none;
+    }
+    &.inverse {
+      display: block;
     }
   }
 }
