@@ -13,13 +13,13 @@ module.exports = function(grunt) {
                     compress: true
                 },
                 files: {
-                    "css/styles.css":"less/styles.less"
+                    "css/styles.css":"css/less/styles.less"
                 }
             }
         },
         watch:{
             less:{
-                files: "less/**/*.less",
+                files: "css/less/**/*.less",
                 tasks: "less:compile",
                 options:{
                     livereload: {
