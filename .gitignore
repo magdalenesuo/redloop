@@ -1,0 +1,7 @@
+# Created by .ignore support plugin (hsz.mobi)
+
+.idea/modules.xml
+.idea/redloop.iml
+.idea/workspace.xml
+node_modules
+
