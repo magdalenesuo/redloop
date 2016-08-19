@@ -2,14 +2,13 @@
    ---------------------------- */
 
 $(window).load(function(){
-    $('.preloader').fadeOut(1000); // set duration in brackets
     init();
 });
 
 $(document).ready(function() {
   fullScreenContainer();
-  owlCarousel();
-  magnificPopup();
+  //owlCarousel();
+  //magnificPopup();
 });
 
 
@@ -17,7 +16,7 @@ $(document).ready(function() {
 /* --- initialize functions on window load here -------------- */
 
 function init() {
-  tooltips();
+  //tooltips();
   onePageScroll();
   scrollAnchor();
   toggleContactForm();
@@ -428,12 +427,12 @@ $(function() {
        var last_name = $("input#last_name").val();  
        var email = $("input#email").val(); 
        var message = $("textarea#message").val();
-    //     var firstName = name; // For Success/Failure Message
-    //        // Check for white space in name for Success/Fail message
-    //     if (firstName.indexOf(' ') >= 0) {
-	   // firstName = name.split(' ').slice(0, -1).join(' ');
-    //      }        
-	 $.ajax({
+        var firstName = name; // For Success/Failure Message
+           // Check for white space in name for Success/Fail message
+        if (firstName.indexOf(' ') >= 0) {
+	   firstName = name.split(' ').slice(0, -1).join(' ');
+         }        
+	   $.ajax({
                 url: "contact_me.php",
             	type: "POST",
             	data: {first_name: first_name, last_name: last_name, email: email, message: message},
