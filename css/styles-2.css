@@ -453,7 +453,7 @@ blockquote {
 }
 .cbp-af-header.cbp-af-header-shrink {
   height: 70px;
-  background-color: white;
+  background-color: #F3F3F3;
   border-bottom: 1px solid white;
 }
 .cbp-af-header.cbp-af-header-shrink .dropdown-menu {
