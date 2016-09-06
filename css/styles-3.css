@@ -436,7 +436,7 @@ blockquote {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-height:0.5em;
-  margin: 0 0 0 20px;
+  margin: 0 0 0 10px;
   font-size: 1.2em;
   text-transform: uppercase;
 }
@@ -1542,6 +1542,21 @@ section .lead {
 section.light {
   background: #ededed;
 }
+
+section#featured3.light.with-bg {
+  background: url('../img/bg-content2.jpg') center center no-repeat;
+  background-size: cover;
+}
+section#featured3.dark {
+  background-color: black;
+  background: url('../img/rk4qwG.jpg');
+
+}
+section#featured3.dark.with-bg {
+  background: url('../img/bg-content2.jpg') center center no-repeat;
+  background-size: cover;
+}
+
 section.light.with-bg {
   background: url('../img/bg-content1.jpg') center center no-repeat;
   background-size: cover;
